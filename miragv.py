@@ -21,11 +21,11 @@ print(missions[-1])
 
 
 
-def runMission(missions, headers){
+def runMission(missionsID, headers){
 
-getMissons_url= "http://mir.com/api/v2.0.0/missions"
+postMissons_url= "http://mir.com/api/v2.0.0/",missionsID,"/missions/actions"
 
-response_getMissions =requests.get(getMissons_url,headers=headers)
+send_postMissions =requests.get(postMissons_url,headers=headers)
 
 }
 
